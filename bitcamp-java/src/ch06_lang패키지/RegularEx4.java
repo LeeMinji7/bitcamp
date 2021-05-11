@@ -19,10 +19,12 @@ class RegularEx4 {
 
             // broken을 drunken으로 치환하여 sb에 저장한다.
 			m.appendReplacement(sb, "drunken");  
+			System.out.println("result:"+sb.toString());
 		}
 
 		m.appendTail(sb);
 		System.out.println("Replacement count : " + i);
 		System.out.println("result:"+sb.toString());
+		System.out.println("source:"+source);
 	}
 }

@@ -11,10 +11,11 @@ class WrapperEx2 {
 		int i7 = Integer.parseInt("FF", 16);
 //		int i8 = Integer.parseInt("FF");  // NumberFormatException발생
 
-		Integer i9 = Integer.valueOf("100",2);
+		Integer i9 = Integer.valueOf("100",2); // 형태: (문자열, 진수)
 		Integer i10 = Integer.valueOf("100",8);
 		Integer i11 = Integer.valueOf("100",16);
 		Integer i12 = Integer.valueOf("FF",16);
+		int i13 = Integer.valueOf("FF",16);
 //		Integer i13 = Integer.valueOf("FF"); // NumberFormatException발생
 
 		System.out.println(i);
@@ -29,5 +30,6 @@ class WrapperEx2 {
 		System.out.println("100(8) -> "+i10);
 		System.out.println("100(16)-> "+i11);
 		System.out.println("FF(16) -> "+i12);
+		System.out.println("FF(16) -> "+i13);
 	}
 }
